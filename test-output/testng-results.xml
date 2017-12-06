@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7297" started-at="2017-12-04T15:03:53Z" finished-at="2017-12-04T15:04:01Z">
+  <suite name="Default suite" duration-ms="7716" started-at="2017-12-06T15:59:43Z" finished-at="2017-12-06T15:59:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7297" started-at="2017-12-04T15:03:53Z" finished-at="2017-12-04T15:04:01Z">
-      <class name="com.koodo.VerifySelfserve">
-        <test-method status="PASS" signature="goToKoodo()[pri:0, instance:com.koodo.VerifySelfserve@117159c0]" name="goToKoodo" is-config="true" duration-ms="4692" started-at="2017-12-04T10:03:53Z" finished-at="2017-12-04T10:03:58Z">
+    <test name="Default test" duration-ms="7716" started-at="2017-12-06T15:59:43Z" finished-at="2017-12-06T15:59:50Z">
+      <class name="com.koodo.test.VerifySelfserve">
+        <test-method status="PASS" signature="goToKoodo()[pri:0, instance:com.koodo.test.VerifySelfserve@2fb0623e]" name="goToKoodo" is-config="true" duration-ms="5880" started-at="2017-12-06T10:59:43Z" finished-at="2017-12-06T10:59:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToKoodo -->
-        <test-method status="PASS" signature="verifyKoodoTitle()[pri:1, instance:com.koodo.VerifySelfserve@117159c0]" name="verifyKoodoTitle" duration-ms="16" started-at="2017-12-04T10:03:58Z" finished-at="2017-12-04T10:03:58Z">
+        <test-method status="PASS" signature="verifyKoodoTitle()[pri:1, instance:com.koodo.test.VerifySelfserve@2fb0623e]" name="verifyKoodoTitle" duration-ms="16" started-at="2017-12-06T10:59:48Z" finished-at="2017-12-06T10:59:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyKoodoTitle -->
-        <test-method status="PASS" signature="verifyClickSelfServe()[pri:2, instance:com.koodo.VerifySelfserve@117159c0]" name="verifyClickSelfServe" duration-ms="2307" started-at="2017-12-04T10:03:58Z" finished-at="2017-12-04T10:04:00Z">
+        <test-method status="PASS" signature="verifyClickSelfServe()[pri:2, instance:com.koodo.test.VerifySelfserve@2fb0623e]" name="verifyClickSelfServe" duration-ms="1508" started-at="2017-12-06T10:59:48Z" finished-at="2017-12-06T10:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClickSelfServe -->
-        <test-method status="PASS" signature="typeCredential()[pri:3, instance:com.koodo.VerifySelfserve@117159c0]" name="typeCredential" duration-ms="121" started-at="2017-12-04T10:04:00Z" finished-at="2017-12-04T10:04:01Z">
+        <test-method status="PASS" signature="typeCredential()[pri:3, instance:com.koodo.test.VerifySelfserve@2fb0623e]" name="typeCredential" duration-ms="138" started-at="2017-12-06T10:59:50Z" finished-at="2017-12-06T10:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- typeCredential -->
-        <test-method status="PASS" signature="closeMyDriver()[pri:0, instance:com.koodo.VerifySelfserve@117159c0]" name="closeMyDriver" is-config="true" duration-ms="141" started-at="2017-12-04T10:04:01Z" finished-at="2017-12-04T10:04:01Z">
+        <test-method status="PASS" signature="closeMyDriver()[pri:0, instance:com.koodo.test.VerifySelfserve@2fb0623e]" name="closeMyDriver" is-config="true" duration-ms="150" started-at="2017-12-06T10:59:50Z" finished-at="2017-12-06T10:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeMyDriver -->
-      </class> <!-- com.koodo.VerifySelfserve -->
+      </class> <!-- com.koodo.test.VerifySelfserve -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

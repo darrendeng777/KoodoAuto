@@ -1,4 +1,4 @@
-package com.koodo;
+package com.koodo.test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

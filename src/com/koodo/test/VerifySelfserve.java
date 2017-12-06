@@ -1,4 +1,4 @@
-package com.koodo;
+package com.koodo.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,10 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.koodo.locator.HomePage;
+
 public class VerifySelfserve {
 	
 	//1.to create webdriver
 	WebDriver driver = new FirefoxDriver();
+	
 	
 	//2.go to koodo site
 	@BeforeClass
@@ -33,7 +36,9 @@ public class VerifySelfserve {
 	//4.click on self serve
 	@Test(priority=2)
 	public void verifyClickSelfServe() {
-		driver.findElement(By.xpath("(//a[contains(text(),'Self Serve')])[2]")).click();
+		HomePage hp = new HomePage(driver);
+		//driver.findElement(By.xpath("(//a[contains(text(),'Self Serve')])[2]")).click();
+		hp.clickOnSelfServeLink();
 	}
 	
 	//5.type in credential
