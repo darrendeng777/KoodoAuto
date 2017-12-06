@@ -9,12 +9,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.koodo.locator.HomePage;
+import com.koodo.locator.LoginPage;
 
 public class VerifySelfserve {
 	
 	//1.to create webdriver
 	WebDriver driver = new FirefoxDriver();
-	
+	HomePage hp = new HomePage(driver);
+	LoginPage lp = new LoginPage(driver);
 	
 	//2.go to koodo site
 	@BeforeClass
@@ -36,7 +38,7 @@ public class VerifySelfserve {
 	//4.click on self serve
 	@Test(priority=2)
 	public void verifyClickSelfServe() {
-		HomePage hp = new HomePage(driver);
+		
 		//driver.findElement(By.xpath("(//a[contains(text(),'Self Serve')])[2]")).click();
 		hp.clickOnSelfServeLink();
 	}
@@ -44,8 +46,10 @@ public class VerifySelfserve {
 	//5.type in credential
 	@Test(priority=3)
 	public void typeCredential() {
-		driver.findElement(By.xpath("//input[@name='IDToken1']")).sendKeys("sheldon_hua@telusinternal.com");
-		driver.findElement(By.xpath("//input[@name='IDToken2']")).sendKeys("Koodouat1234");
+		lp.enterUserName("sheldon_hua@telusinternal.com");
+		lp.enterPassWord("Koodouat1234");
+		//driver.findElement(By.xpath("//input[@name='IDToken1']")).sendKeys("sheldon_hua@telusinternal.com");
+		//driver.findElement(By.xpath("//input[@name='IDToken2']")).sendKeys("Koodouat1234");
 		
 	}
 	

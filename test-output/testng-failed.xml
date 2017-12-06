@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.koodo.VerifySelfserve">
+      <class name="com.koodo.test.VerifySelfserve">
         <methods>
+          <include name="closeMyDriver"/>
           <include name="goToKoodo"/>
           <include name="typeCredential"/>
-          <include name="verifyClickSelfServe"/>
-          <include name="verifyKoodoTitle"/>
-          <include name="closeMyDriver"/>
         </methods>
-      </class> <!-- com.koodo.VerifySelfserve -->
+      </class> <!-- com.koodo.test.VerifySelfserve -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
