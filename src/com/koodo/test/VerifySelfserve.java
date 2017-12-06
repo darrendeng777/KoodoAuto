@@ -1,6 +1,5 @@
 package com.koodo.test;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -13,7 +12,7 @@ import com.koodo.locator.LoginPage;
 
 public class VerifySelfserve {
 	
-	//1.to create webdriver
+	//1.create all instance
 	WebDriver driver = new FirefoxDriver();
 	HomePage hp = new HomePage(driver);
 	LoginPage lp = new LoginPage(driver);
@@ -22,6 +21,7 @@ public class VerifySelfserve {
 	@BeforeClass
 	public void goToKoodo() {
 		driver.get("https://www.koodomobile.com");
+		driver.manage().window().maximize();
 	}
 	
 	//3.verify if you are in koodo site
@@ -39,18 +39,15 @@ public class VerifySelfserve {
 	@Test(priority=2)
 	public void verifyClickSelfServe() {
 		
-		//driver.findElement(By.xpath("(//a[contains(text(),'Self Serve')])[2]")).click();
 		hp.clickOnSelfServeLink();
 	}
 	
-	//5.type in credential
+	//5.type in credential and login
 	@Test(priority=3)
 	public void typeCredential() {
 		lp.enterUserName("sheldon_hua@telusinternal.com");
 		lp.enterPassWord("Koodouat1234");
-		//driver.findElement(By.xpath("//input[@name='IDToken1']")).sendKeys("sheldon_hua@telusinternal.com");
-		//driver.findElement(By.xpath("//input[@name='IDToken2']")).sendKeys("Koodouat1234");
-		
+		lp.clickLogin();
 	}
 	
 	//6.close driver
