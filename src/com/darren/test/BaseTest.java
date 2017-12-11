@@ -14,6 +14,7 @@ public class BaseTest {
 	WebDriver driver = new FirefoxDriver();
 	WebDriverWait wait = new WebDriverWait(driver,20);
 	String uRL = "https://gmail.com"; 
+	String userName = "koodosscommerce@gmail.com";
 	UserNameLoginPage unlp = new UserNameLoginPage(driver); 
 	
 	//open browser and URL

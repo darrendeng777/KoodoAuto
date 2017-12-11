@@ -17,7 +17,7 @@ public class GmailLogin extends BaseTest {
 	//enter Username and click on next
 	@Test(priority=1)
 	public void enterUserNameCredential() {
-		unlp.enterUserName("koodosscommerce@gmail.com");
+		unlp.enterUserName(userName);
 		unlp.clickNext();
 	}
 	

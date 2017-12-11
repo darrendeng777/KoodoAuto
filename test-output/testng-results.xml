@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10180" started-at="2017-12-11T16:21:04Z" finished-at="2017-12-11T16:21:14Z">
+  <suite name="Default suite" duration-ms="10681" started-at="2017-12-11T16:37:51Z" finished-at="2017-12-11T16:38:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10180" started-at="2017-12-11T16:21:04Z" finished-at="2017-12-11T16:21:14Z">
+    <test name="Default test" duration-ms="10681" started-at="2017-12-11T16:37:51Z" finished-at="2017-12-11T16:38:02Z">
       <class name="com.darren.test.GmailLogin">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.darren.test.GmailLogin@5a62b2a4]" name="OpenBrowser" is-config="true" duration-ms="2910" started-at="2017-12-11T11:21:04Z" finished-at="2017-12-11T11:21:06Z">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.darren.test.GmailLogin@5a62b2a4]" name="OpenBrowser" is-config="true" duration-ms="3524" started-at="2017-12-11T11:37:51Z" finished-at="2017-12-11T11:37:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="enterUserNameCredential()[pri:1, instance:com.darren.test.GmailLogin@5a62b2a4]" name="enterUserNameCredential" duration-ms="591" started-at="2017-12-11T11:21:06Z" finished-at="2017-12-11T11:21:07Z">
+        <test-method status="PASS" signature="enterUserNameCredential()[pri:1, instance:com.darren.test.GmailLogin@5a62b2a4]" name="enterUserNameCredential" duration-ms="560" started-at="2017-12-11T11:37:55Z" finished-at="2017-12-11T11:37:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterUserNameCredential -->
-        <test-method status="PASS" signature="enterPassword()[pri:2, instance:com.darren.test.GmailLogin@5a62b2a4]" name="enterPassword" duration-ms="6160" started-at="2017-12-11T11:21:07Z" finished-at="2017-12-11T11:21:13Z">
+        <test-method status="PASS" signature="enterPassword()[pri:2, instance:com.darren.test.GmailLogin@5a62b2a4]" name="enterPassword" duration-ms="6086" started-at="2017-12-11T11:37:55Z" finished-at="2017-12-11T11:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterPassword -->
-        <test-method status="PASS" signature="verifyAfterLogin()[pri:3, instance:com.darren.test.GmailLogin@5a62b2a4]" name="verifyAfterLogin" duration-ms="8" started-at="2017-12-11T11:21:13Z" finished-at="2017-12-11T11:21:13Z">
+        <test-method status="PASS" signature="verifyAfterLogin()[pri:3, instance:com.darren.test.GmailLogin@5a62b2a4]" name="verifyAfterLogin" duration-ms="23" started-at="2017-12-11T11:38:01Z" finished-at="2017-12-11T11:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAfterLogin -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.darren.test.GmailLogin@5a62b2a4]" name="closeDriver" is-config="true" duration-ms="477" started-at="2017-12-11T11:21:13Z" finished-at="2017-12-11T11:21:14Z">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.darren.test.GmailLogin@5a62b2a4]" name="closeDriver" is-config="true" duration-ms="454" started-at="2017-12-11T11:38:01Z" finished-at="2017-12-11T11:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
