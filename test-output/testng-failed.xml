@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.koodo.test.VerifySelfserve">
+      <class name="com.darren.locator.GmailLogin">
         <methods>
-          <include name="closeMyDriver"/>
-          <include name="goToKoodo"/>
-          <include name="typeCredential"/>
+          <include name="verifyAfterLogin"/>
+          <include name="closeDriver"/>
+          <include name="OpenBrowser"/>
         </methods>
-      </class> <!-- com.koodo.test.VerifySelfserve -->
+      </class> <!-- com.darren.locator.GmailLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

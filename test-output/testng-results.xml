@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9952" started-at="2017-12-06T20:49:46Z" finished-at="2017-12-06T20:49:56Z">
+  <suite name="Default suite" duration-ms="10180" started-at="2017-12-11T16:21:04Z" finished-at="2017-12-11T16:21:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9952" started-at="2017-12-06T20:49:46Z" finished-at="2017-12-06T20:49:56Z">
-      <class name="com.koodo.test.VerifySelfserve">
-        <test-method status="PASS" signature="goToKoodo()[pri:0, instance:com.koodo.test.VerifySelfserve@3bcd05cb]" name="goToKoodo" is-config="true" duration-ms="5069" started-at="2017-12-06T15:49:46Z" finished-at="2017-12-06T15:49:51Z">
+    <test name="Default test" duration-ms="10180" started-at="2017-12-11T16:21:04Z" finished-at="2017-12-11T16:21:14Z">
+      <class name="com.darren.test.GmailLogin">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.darren.test.GmailLogin@5a62b2a4]" name="OpenBrowser" is-config="true" duration-ms="2910" started-at="2017-12-11T11:21:04Z" finished-at="2017-12-11T11:21:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToKoodo -->
-        <test-method status="PASS" signature="verifyKoodoTitle()[pri:1, instance:com.koodo.test.VerifySelfserve@3bcd05cb]" name="verifyKoodoTitle" duration-ms="37" started-at="2017-12-06T15:49:51Z" finished-at="2017-12-06T15:49:51Z">
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="enterUserNameCredential()[pri:1, instance:com.darren.test.GmailLogin@5a62b2a4]" name="enterUserNameCredential" duration-ms="591" started-at="2017-12-11T11:21:06Z" finished-at="2017-12-11T11:21:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyKoodoTitle -->
-        <test-method status="PASS" signature="verifyClickSelfServe()[pri:2, instance:com.koodo.test.VerifySelfserve@3bcd05cb]" name="verifyClickSelfServe" duration-ms="1746" started-at="2017-12-06T15:49:51Z" finished-at="2017-12-06T15:49:52Z">
+        </test-method> <!-- enterUserNameCredential -->
+        <test-method status="PASS" signature="enterPassword()[pri:2, instance:com.darren.test.GmailLogin@5a62b2a4]" name="enterPassword" duration-ms="6160" started-at="2017-12-11T11:21:07Z" finished-at="2017-12-11T11:21:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClickSelfServe -->
-        <test-method status="PASS" signature="typeCredential()[pri:3, instance:com.koodo.test.VerifySelfserve@3bcd05cb]" name="typeCredential" duration-ms="2882" started-at="2017-12-06T15:49:52Z" finished-at="2017-12-06T15:49:55Z">
+        </test-method> <!-- enterPassword -->
+        <test-method status="PASS" signature="verifyAfterLogin()[pri:3, instance:com.darren.test.GmailLogin@5a62b2a4]" name="verifyAfterLogin" duration-ms="8" started-at="2017-12-11T11:21:13Z" finished-at="2017-12-11T11:21:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- typeCredential -->
-        <test-method status="PASS" signature="closeMyDriver()[pri:0, instance:com.koodo.test.VerifySelfserve@3bcd05cb]" name="closeMyDriver" is-config="true" duration-ms="180" started-at="2017-12-06T15:49:55Z" finished-at="2017-12-06T15:49:56Z">
+        </test-method> <!-- verifyAfterLogin -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.darren.test.GmailLogin@5a62b2a4]" name="closeDriver" is-config="true" duration-ms="477" started-at="2017-12-11T11:21:13Z" finished-at="2017-12-11T11:21:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeMyDriver -->
-      </class> <!-- com.koodo.test.VerifySelfserve -->
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.darren.test.GmailLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
