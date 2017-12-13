@@ -1,5 +1,7 @@
 package com.koodo.test;
 
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -16,13 +18,18 @@ public class VerifySelfserve {
 	WebDriver driver = new FirefoxDriver();
 	HomePage hp = new HomePage(driver);
 	LoginPage lp = new LoginPage(driver);
+	Properties pro;
+	GetProperties gp = new GetProperties();
+	String userName = gp.getUserName();
+	String uRL = gp.getURL();
 	
 	//2.go to koodo site
 	@BeforeClass
 	public void goToKoodo() {
-		driver.get("https://www.koodomobile.com");
+		driver.get(uRL);
 		driver.manage().window().maximize();
 	}
+	
 	
 	//3.verify if you are in koodo site
 	@Test(priority=1)
@@ -45,7 +52,7 @@ public class VerifySelfserve {
 	//5.type in credential and login
 	@Test(priority=3)
 	public void typeCredential() {
-		lp.enterUserName("sheldon_hua@telusinternal.com");
+		lp.enterUserName(userName);
 		lp.enterPassWord("Koodouat1234");
 		lp.clickLogin();
 	}
