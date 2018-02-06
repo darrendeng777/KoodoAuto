@@ -12,16 +12,20 @@ public class GmailLoginFlow extends BaseTest{
 	//enterUserName
 	@Test(priority=1)
 	public void enterUserName() {
-		unp.enterUserName();
+		unp.enterUserName(email);
 		unp.clickUserNameButton();
+		System.out.println("-----------------5.GmailLoginFlow.enterUserName------------------");
 	}
 	
 	//enterPassWord
 	@Test(priority=2)
-	public void enterPassWord() {
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("password")));
-		driver.findElement(By.id("password")).sendKeys("koodouat123");
-		driver.findElement(By.id("passwordNext")).click();
+	public void enterPassWord(){
+		
+    wait.until(ExpectedConditions.elementToBeClickable(By.id("passwordNext")));
+	
+	pwp.enterPassword(passwordx);	
+	pwp.clickPasswordButton();	
+	System.out.println("-----------------8.GmailPasswordFlow.enterPassword------------------");
 		
 	}
 	
@@ -31,9 +35,8 @@ public class GmailLoginFlow extends BaseTest{
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='#inbox']")));
 		String expectedTitle = "koodosscommerce@gmail.com";
 		String actualTitle = driver.getTitle();
-		System.out.println("--------This is the title------- "+actualTitle);
 		Assert.assertTrue(actualTitle.contains(expectedTitle));
-		
+		System.out.println("-----------------9.GmailLoginFlow.verifyLoginTitle------------------");
 	}
 	
 }
