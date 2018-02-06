@@ -11,15 +11,15 @@ public class KoodoLogin extends BaseTest{
 	//go to login page
 	@Test(priority=1)
 	public void goToLoginPage() {
-		lpl.enterLoginPage();
+		hpl.enterLoginPage();
 	}
 	
 	//enter credential
 	@Test(priority=2)
 	public void enterCredential() {
-		lpl.enterUserName(userName);
-		lpl.enterPassWord(passWord);
-		lpl.clickOnLogin();
+		hpl.enterUserName(userName);
+		hpl.enterPassWord(passWord);
+		hpl.clickOnLogin();
 	}
 	
 	//verify title

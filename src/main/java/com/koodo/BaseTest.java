@@ -13,7 +13,8 @@ public class BaseTest {
 	//create instance
 	WebDriver driver = new FirefoxDriver();
 	ReadProperties rp =  new ReadProperties();
-	LoginPageLocator lpl = new LoginPageLocator(driver);
+	homePageLocator hpl = new homePageLocator(driver);
+	PhonePageLocator ppl = new PhonePageLocator(driver);
 	String uRL = rp.getURL();
 	String userName = rp.getUserName();
     String passWord = rp.getPassWord();
@@ -25,7 +26,7 @@ public class BaseTest {
 	public void startBrowser() {
 		driver.get(uRL);
 		//driver.manage().window().maximize();
-		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 	
 	//close browser
