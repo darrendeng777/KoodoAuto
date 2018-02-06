@@ -25,7 +25,7 @@ public class BaseTest {
 	public void startBrowser() {
 		driver.get(uRL);
 		//driver.manage().window().maximize();
-		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 	
 	//close browser
