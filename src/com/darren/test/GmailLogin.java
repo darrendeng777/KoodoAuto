@@ -27,6 +27,7 @@ public class GmailLogin extends BaseTest {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("password")));
 		driver.findElement(By.id("password")).sendKeys("koodouat123");
 		driver.findElement(By.id("passwordNext")).click();
+		
 	}
 	
 	//verify after login 
